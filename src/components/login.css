@@ -1,0 +1,182 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.login_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 12rem;
+}
+
+.login_inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.auth_logo {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.auth_logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.auth_heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth_heading p {
+  padding-top: 0.5rem;
+}
+
+.login_inputContainer input {
+  width: 19.5rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  padding-left: 20px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.login_prop {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.login_prop p {
+  padding-left: 0.5rem;
+}
+
+.login_prop a {
+  text-decoration: none;
+  margin-left: 1.8rem;
+  color: rgb(25, 113, 158);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.auth_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth_btns button {
+  width: 21rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: 2rem;
+}
+
+.btn1 {
+  background-color: rgb(14, 129, 185);
+  color: white;
+}
+
+.auth_links {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+
+.auth_links a {
+  text-decoration: none;
+  color: rgb(14, 129, 185);
+}
+
+.auth_image {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(242, 244, 247);
+}
+
+.auth_image img {
+  height: 80%;
+  object-fit: contain;
+  margin-top: 5rem;
+  border: 9px solid black;
+  border-radius: 9px;
+  border-right: none;
+  /* margin-left: 10rem; */
+}
+
+/* .btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    cursor: pointer;
+    height: 2.8rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .btn2 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+  } */
+
+/* Extra small devices phone */
+@media only screen and (max-width: 600px) {
+  .auth_image {
+    display: none;
+  }
+  .login_container {
+    margin: 2rem 1rem;
+    padding-right: 1rem;
+    justify-content: flex-start;
+    height: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones and up */
+@media only screen and (min-width: 600px) {
+  .auth_image {
+    display: none;
+  }
+}
+
+/* Medium devices Tablets */
+@media only screen and (min-width: 768px) {
+  .auth_image {
+    display: none;
+  }
+}
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+  .auth_image {
+    display: block;
+  }
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+  .auth_image {
+    display: block;
+  }
+}
